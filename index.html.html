@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Areeb Ur Rehman – Procurement & Supply Chain Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Areeb Ur Rehman — Strategic Procurement, Supply Chain & Logistics, ERP & Data Systems. Portfolio with instant ATS-friendly CV generator.">
+<style>
+:root {
+    --bg: #0b1020;
+    --card: #141a2b;
+    --accent: #00c3ff;
+    --accent2: #ff7a00;
+    --text: #e5e9f0;
+    --muted: #9fa6c0;
+    --hl-bg: rgba(0,195,255,0.16);
+    --hl-text: #7be6ff;
+}
+* { box-sizing: border-box; }
+body {
+    margin:0;
+    font-family:system-ui,Segoe UI,sans-serif;
+    background:radial-gradient(circle at top,#1b2540 0,#050814 55%);
+    color:var(--text);
+}
+header {
+    padding:40px 20px;
+    text-align:center;
+    background:linear-gradient(135deg,#050814,#141a2b);
+    border-bottom:1px solid #222a3f;
+}
+header h1 {
+    margin:0;
+    font-size:2.4rem;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+}
+header p {
+    margin:10px 0 0;
+    color:var(--muted);
+    font-size:0.95rem;
+}
+.badge-row {
+    margin-top:20px;
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    flex-wrap:wrap;
+}
+.badge {
+    border-radius:999px;
+    border:1px solid #2b3550;
+    padding:6px 14px;
+    font-size:0.8rem;
+    color:var(--muted);
+    background:rgba(10,16,32,0.8);
+}
+nav {
+    position:sticky;
+    top:0;
+    z-index:20;
+    background:#050814ee;
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid #1f2638;
+}
+nav ul {
+    list-style:none;
+    margin:0;
+    padding:8px 20px;
+    display:flex;
+    justify-content:center;
+    gap:18px;
+    flex-wrap:wrap;
+}
+nav a {
+    color:var(--muted);
+    text-decoration:none;
+    font-size:0.85rem;
+    text-transform:uppercase;
+    letter-spacing:0.08em;
+}
+nav a:hover, nav a.cta {color:var(--accent);}
+nav a.cta { color:var(--accent2); font-weight:700; }
+main {
+    max-width:1100px;
+    margin:0 auto;
+    padding:30px 20px 60px;
+}
+section {margin-bottom:40px;}
+section h2 {
+    font-size:1.4rem;
+    text-transform:uppercase;
+    letter-spacing:0.12em;
+    margin-bottom:18px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+section h2::before {
+    content:"";
+    width:32px;
+    height:2px;
+    background:linear-gradient(90deg,var(--accent),var(--accent2));
+    border-radius:999px;
+}
+.grid-2 {
+    display:grid;
+    grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);
+    gap:20px;
+}
+.card {
+    background:var(--card);
+    border-radius:14px;
+    padding:18px 20px;
+    box-shadow:0 18px 40px rgba(0,0,0,0.45);
+    border:1px solid #1f2638;
+}
+.card h3 {margin-top:0;font-size:1.05rem;}
+.card p {font-size:0.9rem;line-height:1.5;color:var(--muted);}
+.pill-row {
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-top:8px;
+}
+.pill {
+    font-size:0.8rem;
+    padding:4px 10px;
+    border-radius:999px;
+    background:#1f2638;
+    color:var(--muted);
+    border:1px solid #2b3550;
+}
+table {
+    width:100%;
+    border-collapse:collapse;
+    font-size:0.85rem;
+    margin-top:10px;
+}
+th,td {
+    padding:8px 6px;
+    border-bottom:1px solid #222a3f;
+    text-align:left;
+}
+th {color:var(--accent);font-weight:600;}
+.timeline {
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+.role {
+    border-left:3px solid #222a3f;
+    padding-left:14px;
+}
+.role-header {
+    display:flex;
+    justify-content:space-between;
+    gap:10px;
+    flex-wrap:wrap;
+    align-items:flex-end;
+}
+.role-title {font-size:1rem;font-weight:600;}
+.role-meta {font-size:0.8rem;color:var(--muted);}
+.role ul {
+    margin:8px 0 0 18px;
+    padding:0;
+    font-size:0.88rem;
+    color:var(--muted);
+}
+.role ul li {margin-bottom:4px;}
+.role mark, #cv-preview mark {
+    background:var(--hl-bg);
+    color:var(--hl-text);
+    padding:1px 5px;
+    border-radius:5px;
+    font-weight:700;
+    font-style:normal;
+}
+.subheading {
+    font-size:0.85rem;
+    text-transform:uppercase;
+    letter-spacing:0.12em;
+    color:var(--accent);
+    margin-top:10px;
+}
+.viz-grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:12px;
+    margin-top:10px;
+}
+.viz-card {
+    background:#101628;
+    border-radius:10px;
+    padding:10px 12px;
+    border:1px dashed #28324a;
+}
+.viz-card h4 {
+    margin:0 0 4px;
+    font-size:0.85rem;
+    color:var(--accent2);
+}
+.viz-card p {
+    margin:0;
+    font-size:0.8rem;
+    color:var(--muted);
+}
+.lang-row {
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-top:8px;
+}
+.lang {
+    padding:6px 12px;
+    border-radius:999px;
+    border:1px solid #28324a;
+    font-size:0.8rem;
+    color:var(--muted);
+}
+footer {
+    text-align:center;
+    padding:18px 10px 26px;
+    font-size:0.8rem;
+    color:var(--muted);
+    border-top:1px solid #1f2638;
+    background:#050814;
+}
+
+/* --- CV Generator --- */
+.cv-generator {
+    background:linear-gradient(160deg,#141a2b,#0d1220);
+    border:1px solid #24304d;
+    border-radius:18px;
+    padding:26px;
+}
+.cv-generator .lead {
+    color:var(--muted);
+    font-size:0.92rem;
+    margin:0 0 18px;
+    max-width:700px;
+}
+.cv-form {
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    align-items:center;
+}
+.cv-form input[type="text"] {
+    flex:1 1 320px;
+    padding:14px 16px;
+    border-radius:10px;
+    border:1px solid #2b3550;
+    background:#0a0f1e;
+    color:var(--text);
+    font-size:0.95rem;
+}
+.cv-form input[type="text"]:focus {
+    outline:2px solid var(--accent);
+    outline-offset:1px;
+}
+.btn {
+    padding:14px 22px;
+    border-radius:10px;
+    border:none;
+    font-size:0.9rem;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:0.06em;
+    cursor:pointer;
+    transition:transform 0.15s ease, opacity 0.15s ease;
+}
+.btn:hover { transform:translateY(-1px); }
+.btn:active { transform:translateY(0); }
+.btn-primary { background:linear-gradient(120deg,var(--accent),#0077ff); color:#04101c; }
+.btn-secondary { background:#1f2638; color:var(--text); border:1px solid #2b3550; }
+.btn-ghost { background:transparent; color:var(--accent); border:1px solid #24405a; }
+.quick-titles {
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-top:14px;
+}
+.quick-titles button {
+    background:#101628;
+    border:1px solid #28324a;
+    color:var(--muted);
+    padding:6px 12px;
+    border-radius:999px;
+    font-size:0.78rem;
+    cursor:pointer;
+}
+.quick-titles button:hover { color:var(--accent); border-color:var(--accent); }
+
+#cv-result { margin-top:26px; display:none; }
+#cv-result.show { display:block; }
+.cv-toolbar {
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    margin-bottom:14px;
+}
+.cv-match-note {
+    font-size:0.8rem;
+    color:var(--accent2);
+    margin-bottom:14px;
+}
+#cv-preview {
+    background:#ffffff;
+    color:#111418;
+    border-radius:10px;
+    padding:38px 42px;
+    font-family:Calibri,Arial,Helvetica,sans-serif;
+    font-size:14px;
+    line-height:1.5;
+    max-width:820px;
+    margin:0 auto;
+}
+#cv-preview h1 {
+    font-size:20px;
+    margin:0 0 2px;
+    letter-spacing:0.02em;
+}
+#cv-preview .cv-contact {
+    font-size:12.5px;
+    color:#333;
+    margin-bottom:16px;
+}
+#cv-preview h2 {
+    font-size:13px;
+    text-transform:uppercase;
+    letter-spacing:0.08em;
+    border-bottom:1.5px solid #111418;
+    padding-bottom:3px;
+    margin:20px 0 8px;
+    color:#111418;
+    display:block;
+}
+#cv-preview h2::before { display:none; }
+#cv-preview p { margin:0 0 8px; }
+#cv-preview ul { margin:4px 0 10px 18px; padding:0; }
+#cv-preview li { margin-bottom:3px; }
+#cv-preview .cv-role-line {
+    display:flex;
+    justify-content:space-between;
+    font-weight:700;
+    margin-top:10px;
+}
+#cv-preview .cv-role-sub {
+    font-style:italic;
+    color:#333;
+    margin-bottom:4px;
+}
+#cv-preview .cv-skills-row {
+    display:flex;
+    flex-wrap:wrap;
+    gap:4px 14px;
+}
+
+@media (max-width: 720px) {
+    .grid-2 { grid-template-columns:1fr; }
+    #cv-preview { padding:24px 20px; }
+}
+
+@media print {
+    body * { visibility:hidden; }
+    #cv-print-area, #cv-print-area * { visibility:visible; }
+    #cv-print-area {
+        position:absolute;
+        left:0; top:0; width:100%;
+        background:#fff;
+    }
+    #cv-preview { box-shadow:none; margin:0; max-width:100%; }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>AREEB UR REHMAN</h1>
+    <p>Strategic Procurement · Supply Chain & Logistics · Financial Operations · ERP & Data Systems</p>
+    <div class="badge-row">
+        <span class="badge">Verified Experience · UK · KSA · Pakistan · Since 2005</span>
+        <span class="badge">Bolton, UK · +44 7341 148993 · areeb_rehman2004@yahoo.com</span>
+        <span class="badge">Reference: linkedin.com/in/areeb-ur-rehman</span>
+    </div>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#declaration">Declaration</a></li>
+        <li><a href="#cv-generator" class="cta">CV Generator</a></li>
+        <li><a href="#competencies">Competencies</a></li>
+        <li><a href="#specialization">Specialization</a></li>
+        <li><a href="#timeline">Career Timeline</a></li>
+        <li><a href="#projects">Key Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills Ledger</a></li>
+        <li><a href="#languages">Languages</a></li>
+    </ul>
+</nav>
+
+<main>
+
+<section id="declaration">
+    <h2>Declaration</h2>
+    <div class="grid-2">
+        <div class="card">
+            <p>Strategic and results-driven procurement and logistics specialist with over 15 years of experience across the UK, Saudi Arabia, and Pakistan. Skilled in supplier coordination, ERP-driven inventory control, export/import documentation, and cost optimisation. Adept at managing cross-functional teams, streamlining dispatch operations, and ensuring compliance with international trade standards.</p>
+            <p>Academically grounded in Real Estate Finance & Investment and Operations & Supply Chain Management. Seeking impactful roles in procurement, buyer coordination, warehouse operations, or logistics administration where structured reporting and visualisation directly support decision-making.</p>
+        </div>
+        <div class="card">
+            <h3>Port of Call</h3>
+            <table>
+                <tr><th>Location</th><th>Email</th><th>Telephone</th></tr>
+                <tr><td>Bolton, United Kingdom</td><td>areeb_rehman2004@yahoo.com</td><td>+44 7341 148993</td></tr>
+            </table>
+            <div class="pill-row">
+                <span class="pill">UK · KSA · Pakistan</span>
+                <span class="pill">Since 2005</span>
+                <span class="pill">MSc Real Estate Finance & Investment</span>
+                <span class="pill">MSc Operations & Supply Chain Management</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="cv-generator">
+    <h2>Tailored ATS CV Generator</h2>
+    <div class="cv-generator">
+        <p class="lead">Type the exact job title you're applying for. This engine re-reads all 13 roles on this page, pulls out the most relevant achievements and skills for that title, and writes a tailored, human-toned, ATS-friendly CV — ready to copy or save as a PDF. Nothing leaves your browser.</p>
+        <div class="cv-form">
+            <input type="text" id="jobTitleInput" placeholder="e.g. Procurement Manager, Supply Chain Analyst, Warehouse Operations Lead...">
+            <button class="btn btn-primary" onclick="generateCV()">Generate CV</button>
+        </div>
+        <div class="quick-titles">
+            <button onclick="quickFill('Procurement Manager')">Procurement Manager</button>
+            <button onclick="quickFill('Supply Chain Coordinator')">Supply Chain Coordinator</button>
+            <button onclick="quickFill('Warehouse & Logistics Manager')">Warehouse & Logistics Manager</button>
+            <button onclick="quickFill('Production Supervisor')">Production Supervisor</button>
+            <button onclick="quickFill('Buyer / Purchasing Officer')">Buyer / Purchasing Officer</button>
+            <button onclick="quickFill('Data & Reporting Analyst')">Data & Reporting Analyst</button>
+        </div>
+
+        <div id="cv-result">
+            <p class="cv-match-note" id="cv-match-note"></p>
+            <div class="cv-toolbar">
+                <button class="btn btn-secondary" onclick="downloadPDF()">Download as PDF</button>
+                <button class="btn btn-secondary" onclick="copyCVText()">Copy CV Text</button>
+                <button class="btn btn-ghost" onclick="document.getElementById('cv-result').classList.remove('show')">Close</button>
+            </div>
+            <div id="cv-print-area">
+                <div id="cv-preview"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="competencies">
+    <h2>Core Competencies</h2>
+    <div class="grid-2">
+        <div class="card">
+            <h3>Operational & Strategic</h3>
+            <ul>
+                <li>Strategic Procurement & Buyer Coordination</li>
+                <li>International Logistics & Export/Import Operations</li>
+                <li>Inventory & Warehouse Management</li>
+                <li>Dispatch Planning & Distribution Oversight</li>
+                <li>Vendor Sourcing & Contract Negotiation</li>
+                <li>Reverse Logistics & Green Supply Chain Initiatives</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Systems, Finance & Data</h3>
+            <ul>
+                <li>Financial Documentation, Bookkeeping & Budget Control</li>
+                <li>LC/LG & Incoterms Compliance</li>
+                <li>ERP: SAP, BAAN, Microsoft Dynamics AX/D365, Sage</li>
+                <li>Data Analysis & Reporting: Excel, Power BI</li>
+                <li>Retail Oversight & Office Administration</li>
+                <li>Warehouse Operations & Logistics Management</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="specialization">
+    <h2>Specialization</h2>
+    <div class="grid-2">
+        <div class="card">
+            <h3>Procurement & Vendor Management</h3>
+            <p>Sourcing, tender evaluation, contract negotiation, and cost control across international supplier networks, from initial RFQ to long-term vendor relationships.</p>
+            <h3>Supply Chain & Logistics</h3>
+            <p>Import/export operations, customs compliance, dispatch planning, and warehouse coordination across multi-region operations.</p>
+            <h3>Financial Operations & Compliance</h3>
+            <p>Bookkeeping, accounts payable, LC/LG documentation, budget control, and month-end close support integrated with ERP systems.</p>
+        </div>
+        <div class="card">
+            <h3>ERP & Data Systems</h3>
+            <p>Hands-on use of SAP, BAAN, Microsoft Dynamics AX/D365 and Sage for procurement, inventory, and finance, combined with Power BI dashboards and Excel automation.</p>
+            <h3>Import/Export & Break Bulk Operations</h3>
+            <p>International shipment coordination, customs documentation, and break bulk cargo handling supporting high-volume container movements.</p>
+            <h3>Real Estate & Investment Insight</h3>
+            <p>MSc thesis on venture capital approaches to real estate investment, including financial modelling for property returns and risk evaluation.</p>
+        </div>
+    </div>
+</section>
+
+<section id="timeline">
+    <h2>Career Timeline</h2>
+    <div class="timeline" id="timeline-container"></div>
+</section>
+
+<section id="projects">
+    <h2>Key Projects – Masheed Trading & Transportation</h2>
+    <div class="card">
+        <p>Delivered during the Procurement Officer & Cost Controller tenure (Oct 2015 – Sep 2022) in a procurement and vendor-coordination capacity.</p>
+        <ul>
+            <li>High-volume construction materials procurement across <mark>five regions</mark>, supporting <mark>800+</mark> containers weekly and <mark>80,000+</mark> deliveries monthly.</li>
+            <li>Vendor consolidation and cost-saving programme achieving up to <mark>15%</mark> reduction in material and logistics costs.</li>
+            <li>Implementation of user acceptance testing for procurement systems, improving data quality and process reliability.</li>
+            <li>Support for reverse logistics and sustainability-focused initiatives, coordinating returns and disposal processes.</li>
+        </ul>
+    </div>
+</section>
+
+<section id="education">
+    <h2>Education & Credentials</h2>
+    <div class="grid-2">
+        <div class="card">
+            <h3>Education</h3>
+            <ul>
+                <li>MSc Real Estate Finance & Investment – UWE Bristol, UK (Thesis: Venture Capital in Real Estate Investment)</li>
+                <li>MSc Operations & Supply Chain Management – Virtual University, Pakistan</li>
+                <li>ACCA Studies – UK Tax, Financial Accounting, Cost Accounting (core books and exam preparation).</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Certifications</h3>
+            <ul>
+                <li>Power BI (Microsoft Certified)</li>
+                <li>Bookkeeping Essentials</li>
+                <li>Supply Chain Fundamentals & Planning</li>
+                <li>Level 7 Diploma – Finance and Accounting</li>
+                <li>Effective Managerial Skills & Demand Planning</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="skills">
+    <h2>Skills Ledger</h2>
+    <div class="card">
+        <table>
+            <tr>
+                <td>ERP & Systems</td>
+                <td>SAP · BAAN · Microsoft Dynamics AX · Microsoft Dynamics 365 · Sage</td>
+            </tr>
+            <tr>
+                <td>Finance & Compliance</td>
+                <td>Bookkeeping & Accounts Payable · Budget Control · Financial Documentation · LC/LG & Incoterms Compliance</td>
+            </tr>
+            <tr>
+                <td>Procurement</td>
+                <td>Vendor Sourcing & Negotiation · Contract Management · Procurement Policy & Procedure · International Logistics</td>
+            </tr>
+            <tr>
+                <td>Warehouse & Dispatch</td>
+                <td>Inventory & Warehouse Management · Dispatch Planning & Distribution Oversight · Stock Audits</td>
+            </tr>
+            <tr>
+                <td>Data & Reporting</td>
+                <td>Power BI · Advanced Excel · KPI Tracking · Data Integrity Management · Standardised report formats (daily, weekly, monthly).</td>
+            </tr>
+            <tr>
+                <td>Projects & Facilities</td>
+                <td>ERP Migration Coordination · Construction & Fit-Out Procurement · Vendor Delivery Management</td>
+            </tr>
+            <tr>
+                <td>Office & Admin</td>
+                <td>MS Office · Email Correspondence · Confidential Documentation · Retail Oversight</td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+<section id="languages">
+    <h2>Languages</h2>
+    <div class="card">
+        <div class="lang-row">
+            <span class="lang">English</span>
+            <span class="lang">Urdu</span>
+            <span class="lang">Punjabi</span>
+            <span class="lang">Hindi</span>
+            <span class="lang">Arabic</span>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    Areeb Ur Rehman · areeb_rehman2004@yahoo.com · +44 7341 148993 · Bolton, UK
+</footer>
+
+<script>
+/* ============ SHARED DATA MODEL ============ */
+/* One source of truth: powers both the visible timeline and the CV generator. */
+const PROFILE = {
+    name: "Areeb Ur Rehman",
+    location: "Bolton, United Kingdom",
+    email: "areeb_rehman2004@yahoo.com",
+    phone: "+44 7341 148993",
+    linkedin: "linkedin.com/in/areeb-ur-rehman"
+};
+
+const ROLES = [
+    {
+        title: "Production Coordinator",
+        company: "David Wood Baking",
+        location: "Bolton, UK",
+        period: "Jun 2024 – Present",
+        tags: ["production","manufacturing","quality","erp","data_analytics"],
+        bullets: [
+            "Coordinated daily production schedules and raw material planning across multiple manufacturing lines.",
+            "Operated production machinery safely, monitoring output and reporting faults promptly.",
+            "Performed metal detection checks and quality inspections in line with GMP/HACCP.",
+            "Updated ERP systems with batch data, stock movements, and dispatch records to keep KPIs current.",
+            "Facilitated shift handovers and resolved operational bottlenecks with supervisors and line leaders."
+        ],
+        viz: [
+            ["Production Efficiency Dashboard (Power BI)", "OEE, downtime analysis, shift performance, and line output vs plan for operational transparency."],
+            ["Daily Batch & Quality Report (Excel)", "Automated batch logs, metal detection results, rejects, and rework, exported as PDF for audits."],
+            ["Material Consumption & Waste Tracker", "Variance between standard and actual usage, highlighting waste hotspots and improvement actions."]
+        ]
+    },
+    {
+        title: "Document Processor",
+        company: "Restore Digital",
+        location: "Manchester, UK",
+        period: "May 2024",
+        tags: ["admin","data_analytics"],
+        bullets: [
+            "Managed secure archiving and digital labelling of confidential documents.",
+            "Scanned and indexed records, verifying accuracy and completeness against source files.",
+            "Ensured compliance with internal data-handling and confidentiality protocols."
+        ],
+        viz: [
+            ["Document Throughput Tracker (Excel)", "Daily volumes processed, error rates, and SLA adherence summarised in standard report format."]
+        ]
+    },
+    {
+        title: "Supply Chain Coordinator",
+        company: "Galaxy UK International Ltd",
+        location: "UK",
+        period: "Feb 2023 – Apr 2024",
+        tags: ["supply_chain","logistics","erp","data_analytics","warehouse"],
+        bullets: [
+            "Managed end-to-end supply chain operations for imported and exported goods, ensuring timely dispatch and inventory accuracy across UK warehouses.",
+            "Negotiated with suppliers and freight forwarders, reducing logistics costs by 12% while maintaining service quality.",
+            "Maintained ERP (D365) records for purchase orders, stock levels, and delivery schedules.",
+            "Coordinated with customs agents to ensure full compliance with UK import regulations.",
+            "Delivered weekly performance reports to senior management using Power BI dashboards.",
+            "Supported cross-functional teams in resolving supply delays and optimising warehouse space utilisation."
+        ],
+        viz: [
+            ["Logistics Cost & Service Dashboard (Power BI)", "Freight cost per route, cost per shipment, carrier performance, and on-time delivery %."],
+            ["Warehouse Inventory Heatmap (Power BI)", "Stock levels, ageing, and days of cover by warehouse, with RAG status."],
+            ["ERP Dispatch Reconciliation (Excel)", "Standard report comparing ERP dispatch records with physical movements and exceptions."]
+        ]
+    },
+    {
+        title: "Retail Assistant (Trading Assistant)",
+        company: "Sainsbury's",
+        location: "London, UK",
+        period: "Dec 2022 – Feb 2023",
+        tags: ["retail","logistics"],
+        bullets: [
+            "Supported online order fulfilment and stock accuracy across the store.",
+            "Streamlined checkout operations, cutting customer waiting times by around 70%.",
+            "Enhanced delivery workflows and inventory tracking, improving delivery accuracy to around 95%.",
+            "Assisted customers on the shop floor and maintained store presentation standards."
+        ],
+        viz: [
+            ["Checkout Performance Snapshot (Excel)", "Queue times, transactions per hour, and staffing levels in a simple daily report format."],
+            ["Online Fulfilment Accuracy Report", "Pick accuracy, delivery timeliness, and substitution rates tracked weekly."]
+        ]
+    },
+    {
+        title: "Dispatcher",
+        company: "POD Logistics",
+        location: "London, UK",
+        period: "Oct 2022 – Dec 2022",
+        tags: ["dispatch","logistics","data_analytics"],
+        bullets: [
+            "Scheduled parcel deliveries and optimised driver routing to meet daily targets.",
+            "Assisted with onboarding of new starters and rollout of system enhancements.",
+            "Tracked shipments in transit and updated internal systems with delivery status.",
+            "Liaised with drivers and depot staff to resolve delays and documentation issues."
+        ],
+        viz: [
+            ["Route Efficiency Dashboard (Power BI)", "Stops per route, distance, time, and fuel cost visualised for optimisation."],
+            ["Delivery SLA Tracker (Excel)", "On-time vs delayed deliveries, reasons for delay, and SLA compliance."]
+        ]
+    },
+    {
+        title: "Procurement Officer & Cost Controller",
+        company: "Masheed Trading & Transportation (Alturki Group)",
+        location: "Al Khobar, KSA",
+        period: "Oct 2015 – Sep 2022",
+        tags: ["procurement","finance","logistics","data_analytics"],
+        bullets: [
+            "Managed procurement for MEP supplies and negotiated vendor contracts.",
+            "Oversaw procurement and cost control supporting over 800 container movements weekly and 80,000+ deliveries monthly across five regions.",
+            "Supervised import/export documentation and ensured compliance with international trade standards.",
+            "Assisted Finance Payables with creation of LCs and LGs for vendors per Incoterms.",
+            "Monitored budgets and led supplier performance reviews.",
+            "Constructed, executed, and documented user acceptance testing on procurement system changes.",
+            "Established strong vendor relationships and supported reverse logistics and green supply chain initiatives."
+        ],
+        viz: [
+            ["Procurement Spend Analysis (Power BI)", "Spend by category, supplier, region, and project with cost-saving initiatives."],
+            ["Vendor Performance Scorecard", "On-time delivery, quality incidents, price adherence, and responsiveness."],
+            ["Container Movement & Delivery Dashboard", "Weekly container counts, delivery volumes, and route performance across regions."],
+            ["Cost Control & Budget Variance (Excel)", "Budget vs actual, variance analysis, and forecast updates in standard report format."]
+        ]
+    },
+    {
+        title: "Procurement Analyst",
+        company: "Masheed Trading & Transportation",
+        location: "Al Khobar, KSA",
+        period: "Sep 2013 – Sep 2015",
+        tags: ["procurement","data_analytics","finance"],
+        bullets: [
+            "Developed demand forecasts and procurement KPIs to support strategic sourcing decisions.",
+            "Created supplier scorecards and performance dashboards to improve vendor accountability.",
+            "Supported tender evaluations and contract renewals through detailed cost-benefit analysis.",
+            "Integrated procurement metrics into company-wide reporting systems.",
+            "Assisted in invoice verification and reconciliation between procurement and finance teams."
+        ],
+        viz: [
+            ["Demand Forecast & Stock Optimisation (Excel/Power BI)", "Forecast vs actual consumption, safety stock levels, and excess stock reduction."],
+            ["Tender & Cost-Benefit Analysis", "Side-by-side comparison of bids, lifecycle cost, and risk scoring."]
+        ]
+    },
+    {
+        title: "Payable Clerk",
+        company: "Mehar Bahrain Trading Est.",
+        location: "Saudi Arabia",
+        period: "Apr 2013 – Aug 2013",
+        tags: ["finance","admin"],
+        bullets: [
+            "Processed vendor invoices, matched purchase orders, and ensured prompt, accurate payments.",
+            "Reconciled accounts, resolved discrepancies, and supported month-end closing activities."
+        ],
+        viz: [
+            ["AP Ageing & Payment Schedule (Excel)", "Vendor ageing, due dates, and cash-flow impact visualised for finance leadership."]
+        ]
+    },
+    {
+        title: "Technical Sales & Purchase Manager",
+        company: "Abdul Majeed Jeweller",
+        location: "Pakistan",
+        period: "Mar 2012 – Mar 2013",
+        tags: ["procurement","retail","admin"],
+        bullets: [
+            "Managed procurement of raw materials and customer engagement for high-value jewellery sales.",
+            "Maintained inventory records and coordinated with suppliers for timely replenishment.",
+            "Oversaw invoicing, product trials, and quality compliance."
+        ],
+        viz: [
+            ["Sales & Margin Dashboard (Excel)", "Item-level sales, gross margin, and stock turnover for owner decisions."]
+        ]
+    },
+    {
+        title: "Assistant Accountant",
+        company: "Pak Qatar Takaful",
+        location: "Pakistan",
+        period: "Mar 2011 – Mar 2012",
+        tags: ["finance","admin","erp"],
+        bullets: [
+            "Oversee and manage daily accounting and finance functions including timely recording of transactions.",
+            "Performed detailed audit on daily supplier invoice batches prior to ERP processing.",
+            "Ensured pricing, quantity, and terms of payables matched agreed conditions.",
+            "Prepared weekly and monthly payments and managed all transactions and records.",
+            "Reconciled supplier statements and resolved discrepancies."
+        ],
+        viz: [
+            ["Invoice Audit & Exception Report (Excel)", "Mismatch detection (price, quantity, terms) and resolution tracking."]
+        ]
+    },
+    {
+        title: "Financial Analyst",
+        company: "Waqar Traders",
+        location: "Pakistan",
+        period: "Mar 2009 – Mar 2011",
+        tags: ["finance","data_analytics"],
+        bullets: [
+            "Conducted thorough analysis of financial data related to trading and transportation operations.",
+            "Developed financial models to predict returns on investments, evaluate risks, and identify trends.",
+            "Prepared monthly reports on operational and financial metrics.",
+            "Analyzed expenses, services, and quality metrics and advised on deviations.",
+            "Assisted in budget preparation and monitored budget adherence."
+        ],
+        viz: [
+            ["Financial KPI Dashboard (Power BI)", "Revenue, cost, margin, and ROI visualised with trend lines and variance vs budget."],
+            ["Investment Scenario Models (Excel)", "NPV, IRR, and sensitivity analysis for trading and transport investments."]
+        ]
+    },
+    {
+        title: "Office Administrator",
+        company: "Kashmir Lab & Medical Center / Kashmir Medical Center",
+        location: "Pakistan",
+        period: "Apr 2007 – Feb 2009",
+        tags: ["admin"],
+        bullets: [
+            "Offered administrative support to a diverse team of medical professionals.",
+            "Managed daily appointment scheduling for patients and optimised doctor schedules.",
+            "Reduced errors in the billing process and ensured accounts were up to date.",
+            "Maintained confidential patient and administrative files in an organised system."
+        ],
+        viz: [
+            ["Appointment & Utilisation Report (Excel)", "Doctor schedule utilisation, no-show rates, and patient flow metrics."],
+            ["Billing Error & Recovery Tracker", "Error types, correction time, and financial impact visualised for clinic management."]
+        ]
+    },
+    {
+        title: "Sales & Purchase Manager",
+        company: "Al Fateh General Store",
+        location: "Pakistan",
+        period: "Mar 2005 – Mar 2007",
+        tags: ["procurement","retail","admin"],
+        bullets: [
+            "Handled vendor relations, procurement, and customer service.",
+            "Managed daily purchasing operations and stock control.",
+            "Improved supplier terms and streamlined inventory turnover."
+        ],
+        viz: [
+            ["Retail Stock & Turnover Dashboard (Excel)", "Stock levels, turnover days, and purchase ledger analysis for store profitability."]
+        ]
+    }
+];
+
+const SKILL_CATEGORIES = [
+    { label: "ERP & Systems", tags: ["erp"], items: "SAP · BAAN · Microsoft Dynamics AX · Microsoft Dynamics 365 · Sage" },
+    { label: "Finance & Compliance", tags: ["finance"], items: "Bookkeeping & Accounts Payable · Budget Control · Financial Documentation · LC/LG & Incoterms Compliance" },
+    { label: "Procurement", tags: ["procurement"], items: "Vendor Sourcing & Negotiation · Contract Management · Procurement Policy & Procedure · International Logistics" },
+    { label: "Warehouse & Dispatch", tags: ["warehouse","dispatch","logistics"], items: "Inventory & Warehouse Management · Dispatch Planning & Distribution Oversight · Stock Audits" },
+    { label: "Data & Reporting", tags: ["data_analytics"], items: "Power BI · Advanced Excel · KPI Tracking · Data Integrity Management · Standardised Reporting" },
+    { label: "Production & Quality", tags: ["production","manufacturing","quality"], items: "GMP/HACCP Compliance · OEE & Downtime Analysis · Batch & Quality Control · Shift Coordination" },
+    { label: "Projects & Facilities", tags: ["procurement","erp"], items: "ERP Migration Coordination · Construction & Fit-Out Procurement · Vendor Delivery Management" },
+    { label: "Office & Admin", tags: ["admin"], items: "MS Office · Email Correspondence · Confidential Documentation · Retail Oversight" }
+];
+
+/* Keyword -> tag dictionary used to interpret whatever job title the user types */
+const KEYWORD_MAP = [
+    { words: ["procure","buyer","purchas","sourcing","vendor","tender"], tag: "procurement" },
+    { words: ["supply chain","supply-chain"], tag: "supply_chain" },
+    { words: ["logistic","freight","shipping","import","export","customs"], tag: "logistics" },
+    { words: ["warehouse","inventory","stock"], tag: "warehouse" },
+    { words: ["dispatch","delivery","distribution","routing","driver"], tag: "dispatch" },
+    { words: ["production","manufactur","plant","factory","line"], tag: "production" },
+    { words: ["quality","gmp","haccp","compliance","assurance"], tag: "quality" },
+    { words: ["erp","sap","d365","dynamics","oracle","system"], tag: "erp" },
+    { words: ["financ","account","payable","cost","budget"], tag: "finance" },
+    { words: ["data","analyst","analytic","bi","report","reporting"], tag: "data_analytics" },
+    { words: ["admin","coordinator","office","assistant"], tag: "admin" },
+    { words: ["retail","sales","store","customer"], tag: "retail" },
+    { words: ["manager","manager","supervisor","lead","head"], tag: "leadership" }
+];
+
+/* Human-readable strength phrases per tag, used to build the tailored summary */
+const STRENGTH_PHRASES = {
+    procurement: "sourcing, vendor negotiation and cost-saving procurement programmes",
+    supply_chain: "end-to-end supply chain coordination across multi-region operations",
+    logistics: "international logistics, freight negotiation and customs compliance",
+    warehouse: "inventory accuracy and warehouse space optimisation",
+    dispatch: "dispatch planning and distribution performance",
+    production: "production scheduling and shop-floor coordination",
+    quality: "GMP/HACCP-aligned quality control and batch compliance",
+    erp: "hands-on ERP administration across SAP, D365 and Dynamics AX",
+    finance: "budget control, accounts payable and LC/LG documentation",
+    data_analytics: "Power BI and Excel-driven reporting that keeps decision-makers informed",
+    admin: "structured administration and confidential documentation handling",
+    retail: "front-line customer service and stock accuracy",
+    leadership: "cross-functional team coordination and shift/site leadership"
+};
+
+/* ============ HIGHLIGHT ENGINE ============ */
+/* Auto-detects the metric/impact fragments in a bullet and wraps them for visual emphasis. */
+function highlightMetrics(text) {
+    return text.replace(
+        /\b(\d{1,3}(?:,\d{3})*(?:\.\d+)?%|\d{1,3}(?:,\d{3})*\+|\b\d+\+\b)/g,
+        '<mark>$1</mark>'
+    );
+}
+
+/* ============ RENDER TIMELINE ============ */
+function renderTimeline() {
+    const container = document.getElementById("timeline-container");
+    container.innerHTML = ROLES.map(role => `
+        <div class="role card">
+            <div class="role-header">
+                <div class="role-title">${role.title}</div>
+                <div class="role-meta">${role.company} · ${role.location} · ${role.period}</div>
+            </div>
+            <ul>
+                ${role.bullets.map(b => `<li>${highlightMetrics(b)}</li>`).join("")}
+            </ul>
+            <div class="subheading">Reporting & Visualisation</div>
+            <div class="viz-grid">
+                ${role.viz.map(v => `
+                    <div class="viz-card">
+                        <h4>${v[0]}</h4>
+                        <p>${v[1]}</p>
+                    </div>`).join("")}
+            </div>
+        </div>
+    `).join("");
+}
+renderTimeline();
+
+/* ============ CV GENERATOR ============ */
+function quickFill(title) {
+    document.getElementById("jobTitleInput").value = title;
+    generateCV();
+}
+
+function tagsFromTitle(title) {
+    const lower = title.toLowerCase();
+    const found = new Set();
+    KEYWORD_MAP.forEach(entry => {
+        if (entry.words.some(w => lower.includes(w))) found.add(entry.tag);
+    });
+    return Array.from(found);
+}
+
+function scoreRole(role, tags) {
+    if (tags.length === 0) return 0;
+    return role.tags.filter(t => tags.includes(t)).length;
+}
+
+function generateCV() {
+    const input = document.getElementById("jobTitleInput");
+    const jobTitle = input.value.trim();
+    if (!jobTitle) {
+        input.focus();
+        input.style.outline = "2px solid #ff7a00";
+        setTimeout(() => input.style.outline = "", 900);
+        return;
+    }
+
+    const tags = tagsFromTitle(jobTitle);
+
+    // Score and rank roles
+    let scored = ROLES.map((role, idx) => ({
+        role, idx, score: scoreRole(role, tags)
+    }));
+
+    let matched = scored.filter(s => s.score > 0).sort((a,b) => b.score - a.score || a.idx - b.idx);
+    let unmatched = scored.filter(s => s.score === 0).sort((a,b) => a.idx - b.idx);
+
+    // Always ensure at least 4 roles show, most recent first, matched roles prioritised
+    let selected = matched.slice(0, 6);
+    if (selected.length < 4) {
+        const need = 4 - selected.length;
+        selected = selected.concat(unmatched.slice(0, need));
+    }
+    selected.sort((a,b) => a.idx - b.idx); // restore reverse-chronological order
+
+    // Build tailored summary
+    const relevantTags = tags.length ? tags : ["procurement","supply_chain","logistics"];
+    const strengthList = relevantTags
+        .filter(t => STRENGTH_PHRASES[t])
+        .slice(0, 3)
+        .map(t => STRENGTH_PHRASES[t]);
+    const strengthText = strengthList.length
+        ? strengthList.join("; ")
+        : "procurement, supply chain and ERP-driven operations";
+
+    const summary = `Results-driven professional with 15+ years of experience across procurement, supply chain, ` +
+        `manufacturing and financial operations in the UK, Saudi Arabia and Pakistan, now seeking a ` +
+        `${jobTitle} position. Brings a proven track record in ${strengthText}. ` +
+        `Comfortable working hands-on with ERP systems (SAP, D365, Dynamics AX) and Power BI/Excel reporting ` +
+        `to keep operations transparent, cost-efficient and audit-ready.`;
+
+    // Build skills section (filtered, but always keep a sensible floor)
+    let skillCats = SKILL_CATEGORIES.filter(cat => cat.tags.some(t => relevantTags.includes(t)));
+    if (skillCats.length < 4) {
+        SKILL_CATEGORIES.forEach(cat => {
+            if (!skillCats.includes(cat) && skillCats.length < 5) skillCats.push(cat);
+        });
+    }
+
+    // Render CV
+    const preview = document.getElementById("cv-preview");
+    preview.innerHTML = `
+        <h1>${PROFILE.name}</h1>
+        <div class="cv-contact">${PROFILE.location} &nbsp;|&nbsp; ${PROFILE.phone} &nbsp;|&nbsp; ${PROFILE.email} &nbsp;|&nbsp; ${PROFILE.linkedin}</div>
+        <div style="font-weight:700;font-size:15px;margin-bottom:10px;">Target Role: ${escapeHtml(jobTitle)}</div>
+
+        <h2>Professional Summary</h2>
+        <p>${summary}</p>
+
+        <h2>Core Skills</h2>
+        <div class="cv-skills-row">
+            ${skillCats.map(c => `<span>${c.label}: ${c.items}</span>`).join("")}
+        </div>
+
+        <h2>Professional Experience</h2>
+        ${selected.map(s => {
+            const role = s.role;
+            const bulletCount = s.score > 0 ? Math.min(role.bullets.length, 5) : Math.min(role.bullets.length, 3);
+            return `
+            <div class="cv-role-line"><span>${role.title}</span><span>${role.period}</span></div>
+            <div class="cv-role-sub">${role.company} — ${role.location}</div>
+            <ul>
+                ${role.bullets.slice(0, bulletCount).map(b => `<li>${escapeHtml(b)}</li>`).join("")}
+            </ul>`;
+        }).join("")}
+
+        <h2>Education</h2>
+        <ul>
+            <li>MSc Real Estate Finance & Investment – UWE Bristol, UK</li>
+            <li>MSc Operations & Supply Chain Management – Virtual University, Pakistan</li>
+            <li>ACCA Studies – UK Tax, Financial Accounting, Cost Accounting</li>
+        </ul>
+
+        <h2>Certifications</h2>
+        <ul>
+            <li>Power BI (Microsoft Certified)</li>
+            <li>Supply Chain Fundamentals & Planning</li>
+            <li>Level 7 Diploma – Finance and Accounting</li>
+            <li>Effective Managerial Skills & Demand Planning</li>
+        </ul>
+
+        <h2>Languages</h2>
+        <p>English · Urdu · Punjabi · Hindi · Arabic</p>
+    `;
+
+    const matchNote = document.getElementById("cv-match-note");
+    matchNote.textContent = matched.length
+        ? `Matched against "${jobTitle}" using ${matched.length} directly relevant role${matched.length>1?"s":""} — prioritised and reordered for this application.`
+        : `No exact keyword overlap for "${jobTitle}" — showing your strongest, most recent all-round experience instead.`;
+
+    document.getElementById("cv-result").classList.add("show");
+    document.getElementById("cv-result").scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+function escapeHtml(str) {
+    const div = document.createElement("div");
+    div.textContent = str;
+    return div.innerHTML;
+}
+
+function downloadPDF() {
+    window.print();
+}
+
+function copyCVText() {
+    const preview = document.getElementById("cv-preview");
+    const text = preview.innerText;
+    navigator.clipboard.writeText(text).then(() => {
+        const btn = event.target;
+        const original = btn.textContent;
+        btn.textContent = "Copied!";
+        setTimeout(() => btn.textContent = original, 1500);
+    });
+}
+
+// Allow Enter key in the input to trigger generation
+document.getElementById("jobTitleInput").addEventListener("keydown", function(e) {
+    if (e.key === "Enter") generateCV();
+});
+</script>
+
+</body>
+</html>
